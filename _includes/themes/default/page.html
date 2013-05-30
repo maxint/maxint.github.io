@@ -1,2 +1,15 @@
-<h3><a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>{{ title }}</h3>
-{{ content }}
+<div id="sidebar">
+	<ul>
+		<li><a href="{{ BASE_PATH }}/">ARTICLES</a></li>
+		<li><a href="{{ BASE_PATH }}/tags.html">TAGS</a></li>
+		{% for cat in site.categories %}
+		<li class="category"><a href="{{ BASE_PATH }}/categories/{{ cat[0] }}.html">{{ cat[0] }}({{ cat | last | size }})</a></li>
+		{% endfor %}
+		<li><a href="{{ BASE_PATH }}/links.html">LINKS</a></li>
+		<li><a href="{{ BASE_PATH }}/about.html">ABOUT</a></li>
+	</ul>
+</div>
+
+<div id="main">
+	{{ content }}
+</div>

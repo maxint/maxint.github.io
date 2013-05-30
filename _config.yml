@@ -8,13 +8,13 @@ title : Maxint Lin
 tagline : On My Way
 author:
     name : Naiyang Lin (maxint)
-    email : lnychina@gmail.com
+    # Encoded email address
+    email : '&#108;&#110;&#121;&#099;&#104;&#105;&#110;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;'
     github : maxint
     weibo : maxint
     bitbucket : maxint
-    feedburner : maxint
 
-production_url : http://maxint.tk
+production_url : http://maxint.github.io
 theme : default
 
 
@@ -40,7 +40,7 @@ JB:
     comments :
         provider : disqus
         disqus :
-            short_name : maxint
+            short_name : mgithub
 
     # Analytics helper
     analytics :
@@ -69,6 +69,8 @@ destination : ./_site
 plugins : ./_plugins
 layouts : ./_layouts
 timezone : Aisa/Beijing
+# for debug
+safe: false
 
 relative_permalinks : true
 # This is the default format. 

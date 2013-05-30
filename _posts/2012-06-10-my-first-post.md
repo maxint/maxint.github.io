@@ -2,9 +2,10 @@
 layout: post
 title: "第一篇日志"
 description: ""
-category: test
+category: coding
 tags: [jekyll]
 ---
+
 This is a test post.
 
     class Test
@@ -22,5 +23,3 @@ It's a paragraph.
 Header 2
 --------
 It's a paragraph.
-
-END
