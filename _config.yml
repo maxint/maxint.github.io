@@ -79,7 +79,7 @@ timezone : Aisa/Beijing
 #paginate_path : 'page:num'
 
 #safe: false # for debug
-#markdown : maruku
+markdown : rdiscount
 pygments : true # for syntax highlight
 #markdown_ext : markdown,mkd,mkdn,md
 #textile_ext : textile
