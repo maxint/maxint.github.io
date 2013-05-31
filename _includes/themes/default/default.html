@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh-cn">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<title>{{ page.title }}</title>
@@ -15,34 +15,34 @@
 	</head>
 	<body>
 
-    <div id="wrapper">
-      <header>
+		<div id="wrapper">
+
+			<div id="header">
 				<a href="{{ HOME_PATH }}"><h1>{{ site.title }}</h1></a>
 				<p>{{ site.tagline }}</p>
-      </header>
-			<div id="content">
+			</div>
+
+			<div id="main">
 				{{ content }}
 			</div>
 
-			<footer>
+			<div id="footer">
 				<div class="contact">
-					<p>
-					{{ site.author.name }}<br />
-					<a href="http://github.com/{{ site.author.github }}/">github.com/{{ site.author.github }}</a><br />
-					<a href="http://bitbucket.org/{{ site.author.bitbucket }}/">bitbucket.org/{{ site.author.bitbucket }}</a><br />
-					<a href="http://weibo.com/{{ site.author.weibo }}/">weibo.com/{{ site.author.weibo }}</a><br />
-					</p>
+					<p>&#64;2013 {{ site.author.shortname }}. Designed by <a href="http://xanpeng.github.io">xanpeng</a></p>
 				</div>
 				<div class="rss">
 					<a href="{{ BASE_PATH }}/atom.xml">
 						<img src="{{ ASSET_PATH }}/images/rss.png" alt="Subscribe to RSS Feed" />
 					</a>
 				</div>
-			</footer>
-	</div>
+			</div>
+		</div>
 
-	{% include JB/analytics %}
-	<script src="{{ ASSET_PATH }}/js/scale.fix.js"></script>
+		<!-- analytics begin -->
+		{% include JB/analytics %}
+		<!-- analytics end -->
+
+		<script src="{{ ASSET_PATH }}/js/scale.fix.js"></script>
 
 	</body>
 </html>
