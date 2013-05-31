@@ -6,10 +6,12 @@ group: navigation
 
 {% include JB/setup %}
 
-<ul id="taglist">
-	{% assign tags_list = site.tags %}  
-	{% include JB/tags_list %}
-</ul>
+<div class="tag_box">
+	<ul>
+		{% assign tags_list = site.tags %}  
+		{% include JB/tags_list %}
+	</ul>
+</div>
 
 {% for tag in site.tags %} 
   <h3 id="{{ tag[0] }}-ref" class="title">{{ tag[0] }}</h3>

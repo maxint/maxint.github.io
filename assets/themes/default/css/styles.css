@@ -90,6 +90,11 @@ div#main.index {
     margin: 15px 0;
 }
 
+.tag_box a span {
+    vertical-align: super;
+    font-size: 0.8em;
+}
+
 /* logo */
 #logo {
     margin: 20px auto;
@@ -237,4 +242,15 @@ span.balloon {
     line-height: 16px;
     margin: 0 5px;
     padding: 2px 5px;
+}
+
+/* disqus */
+div#disqus_thread {
+    margin: 30px 0px 0px;
+}
+div#discovery {
+    display: none !important;
+}
+div.dsq-options, div.dsq-sharing-options, div.dsq-dc-logo, div#dsq-global-toolbar, div#dsq-pagination {
+	display: none !important;
 }

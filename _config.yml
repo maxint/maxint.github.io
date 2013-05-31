@@ -70,21 +70,21 @@ destination : ./_site
 plugins : ./_plugins
 layouts : ./_layouts
 timezone : Aisa/Beijing
-# for debug
-safe: false
 
-relative_permalinks : true
+#relative_permalinks : true
 # This is the default format. 
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 #permalink : date
 #permalink: /:categories/:year/:month/:day/:title 
-paginate_path : 'page:num'
+#paginate_path : 'page:num'
 
-markdown : maruku
-markdown_ext : markdown,mkd,mkdn,md
-textile_ext : textile
+#safe: false # for debug
+#markdown : maruku
+pygments : true # for syntax highlight
+#markdown_ext : markdown,mkd,mkdn,md
+#textile_ext : textile
 
 # Serve settings
-port: 4000
+#port: 4000
 #host: HOSTNAME
 #baseurl: URL
