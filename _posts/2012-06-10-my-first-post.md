@@ -8,14 +8,14 @@ tags: [jekyll]
 
 This is a test post.
 
-``` cpp
+{% highlight cpp %}
 class Test
 {
 public:
     Test();
     ~Test();
 };
-```
+{% endhighlight %}
 
 
 Header 1
