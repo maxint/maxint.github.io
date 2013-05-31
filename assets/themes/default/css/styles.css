@@ -9,11 +9,6 @@ table {
     border-spacing: 0;
 }
 
-address,caption,cite,code,dfn,em,th,var {
-    font-style: normal;
-    font-weight: 400;
-}
-
 caption,th {
     text-align: left;
 }
@@ -117,9 +112,11 @@ div#main.index {
 .content img, .content object {
     border-radius: 5px;
 }
-.content li { list-style: circle inside none; }
+.content ul li { list-style: circle inside none; }
+.content ol li { list-style: decimal inside none; }
 .content .posts li { list-style: none; }
-.content p { margin: 10px 0px; }
+.content p, .content ul, .content ol { margin: 10px 0px; }
+.content p.eof { margin: 30px 0px; }
 
 /* headers */
 #page .content h1 {
@@ -139,7 +136,7 @@ div#main.index {
     padding: 10px 20px;
 }
 .content h2 { font-size: 15px; margin: 12px 0px; }
-.content h3 { font-size: 14px; margin: 8px 0px; }
+.content h3 { font-size: 13px; margin: 8px 0px; }
 
 /* linker */
 h1 a:hover {
@@ -191,11 +188,8 @@ em {
 
 
 /* blocks */
-code {
-    background-color: #F0F0F0;
-}
 pre {
-    background-color: transparent;
+    background-color: #F0F0F0;
     border: 1px dashed #909090;
     font-family: Monaco,Monaco,monospace;
     padding: 8px;
@@ -203,7 +197,7 @@ pre {
 }
 
 blockquote {
-    background: #F0F0F0;
+    background: #E0E0E0;
     border-left: 2px solid #111;
     color: #111;
     margin: 0;
