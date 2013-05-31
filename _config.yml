@@ -78,7 +78,7 @@ timezone : Aisa/Beijing
 #permalink: /:categories/:year/:month/:day/:title 
 #paginate_path : 'page:num'
 
-#safe: false # for debug
+safe: false # for debug
 markdown : rdiscount
 pygments : true # for syntax highlight
 #markdown_ext : markdown,mkd,mkdn,md

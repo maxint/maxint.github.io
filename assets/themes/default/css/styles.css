@@ -142,7 +142,7 @@ div#main.index {
 .content h3 { font-size: 14px; margin: 8px 0px; }
 
 /* linker */
-h1 a: hover {
+h1 a:hover {
     color: #7FFF00;
 }
 
@@ -151,7 +151,7 @@ a {
     text-decoration: none;
 }
 
-a: hover {
+a:hover {
     color: #33f;
     text-decoration: underline;
 }
