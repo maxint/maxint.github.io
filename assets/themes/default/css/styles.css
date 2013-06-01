@@ -103,6 +103,13 @@ div#main.index {
     letter-spacing: 3px;
 }
 
+/* navigation */
+.left { float: left; }
+.right { float: right; }
+#related h2 { text-align: left; }
+#related ul { list-style: circle inside none; }
+#page-navigation { font-size: 13px; }
+
 /* content */
 .content hr {
     border: 0;
@@ -128,6 +135,9 @@ div#main.index {
     padding: 5px;
     border-radius: 5px;
     background: none repeat scroll 0% 0% rgb(221, 221, 221);
+}
+#page h3.title {
+    text-transform: uppercase;
 }
 .content h1 {
     background: none repeat scroll 0px 0px rgb(221, 221, 221);
