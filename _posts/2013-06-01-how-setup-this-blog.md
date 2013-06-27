@@ -27,12 +27,7 @@ GitHub Page本身是支持代码高亮的，使用格式如下：
 
 <code><pre>
 {&#37; highlight cpp %}
-class Test
-{
-public:
-    Test();
-    ~Test();
-};
+printf("Hello wolrd\n");
 {&#37; endhighlight %}
 </pre></code>
 
