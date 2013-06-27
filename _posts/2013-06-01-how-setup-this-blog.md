@@ -25,14 +25,16 @@ tags: [web]
 
 GitHub Page本身是支持代码高亮的，使用格式如下：
 
-    {% highlight cpp %}
-    class Test
-    {
-    public:
-        Test();
-        ~Test();
-    };
-    {% endhighlight %}
+<code><pre>
+{&#37; highlight cpp %}
+class Test
+{
+public:
+    Test();
+    ~Test();
+};
+{&#37; endhighlight %}
+</pre></code>
 
 为了方便本地浏览效果，需要安装Pygments，安装步骤如下：
 
