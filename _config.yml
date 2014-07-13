@@ -39,9 +39,11 @@ JB:
     # Set 'provider' to the comment provider you want to use.
     # Set 'provider' to false to turn commneting off globally.
     comments :
-        provider : disqus
+        provider : uyan
         disqus :
             short_name : mgithub
+        uyan :
+            id : 1948160
 
     # Analytics helper
     analytics :
