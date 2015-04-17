@@ -17,7 +17,6 @@
                 Tags:
 				{% for tag in page.tags %}<span class="tag"><a href="{{ BASE_PATH }}/tags.html#{{ tag }}-ref">{{ tag }}</a></span>{% if forloop.last %}.{% else %}, {% endif %}{% endfor %}
 			{% endif %}
-            <span>(<a href="https://github.com/{{ site.github.username }}/edit/master/{{ page.path }}">Edit</a>)</span>
 		</div>
 		<div class="clear">&nbsp;</div>
 	</div>
