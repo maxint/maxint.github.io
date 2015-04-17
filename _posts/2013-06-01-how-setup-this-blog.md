@@ -5,7 +5,6 @@ description: ""
 category: life
 tags: [web]
 ---
-{% include JB/setup %}
 
 [本博客][4]托管在[GitHub Page](http://page.github.com)上，后台由[Jekyll](http://jekyllrb.com/docs/installation/)生成静态网页。先简单介绍下Jekyll，它由ruby编写的，结合了markdown、Liquid等技术，简化了静态网站的构建过程，配合[disqus](http://www.disqus.com)等在线留言板服务，可以方便的生成具有简单动态功能的网站。
 
