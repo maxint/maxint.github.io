@@ -7,7 +7,7 @@
 title: Maxint Lin
 tagline: On My Way
 
-name: maxint
+username: maxint
 full_name: Naiyan Lin
 author: Naiyan Lin (maxint)
 email: '&#108;&#110;&#121;&#099;&#104;&#105;&#110;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;'
@@ -95,6 +95,9 @@ gems:
   - jekyll-redirect-from # enable recirects, usage: --- redirect_from: "/foo" ---
   - jekyll-mentions # enable @mention
   - jemoji # enable emoji
+
+github:
+  username: maxint/maxint.github.io
 
 defaults:
   -
