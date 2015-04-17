@@ -16,6 +16,14 @@ public:
     ~Test();
 };
 ```
+{% highlight cpp %}
+class Test
+{
+public:
+    Test();
+    ~Test();
+};
+{% endhighlight %}
 
 # Automatic Escaping for Special Characters
 
