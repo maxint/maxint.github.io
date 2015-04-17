@@ -123,10 +123,12 @@ div#main.index {
 .content ol li { list-style: decimal inside none; }
 .content .posts li { list-style: none; }
 .content p, .content ul, .content ol {
-    margin: 20px 0px;
-    text-indent: 2em;
+    margin: 16px 0px;
 }
 .content p.eof { margin: 30px 0px; }
+.content ol, .content ul {
+    padding-left: 2em;
+}
 
 /* headers */
 #page .content h1 {
@@ -202,9 +204,8 @@ em {
 
 /* blocks */
 pre {
-    background-color: #F0F0F0;
+    background-color: #E6E6E6;
     padding: 12px;
-    margin-left: 1em;
     margin-bottom: 6px;
     font-size: 85%;
     line-height: 1.45;
@@ -217,14 +218,10 @@ pre code {
 }
 
 blockquote {
-    background-color: #F0F0F0;
+    background-color: #E6E6E6;
     border-left: 2px solid #111;
     color: #111;
-    margin-left: 2em;
     padding-left: 20px;
-}
-.content blockquote p {
-    text-indent: 0em;
 }
 
 .notice {
