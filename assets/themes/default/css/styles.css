@@ -23,7 +23,7 @@ div#wrapper {
     border-radius: 5px;
     background-color: #f4f4f4;
     color: #111;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 150%;
     margin: 50px auto;
     padding: 20px;
@@ -171,7 +171,7 @@ a img {
 p.date {
     color: #999;
     float: right;
-    font-size: 11px;
+    font-size: 14px;
     margin: 0;
 }
 
@@ -200,14 +200,18 @@ em {
 /* blocks */
 pre {
     background-color: #F0F0F0;
-    border: 1px dashed #909090;
-    font-family: Monaco,Monaco,monospace;
-    padding: 8px;
+    padding: 12px;
     white-space: pre-wrap;
+    margin-bottom: 6px;
+}
+
+pre code {
+    font: 12px Consolas,"Liberation Mono",Menlo,Courier,monospace;
+    line-height: 1.6;
 }
 
 blockquote {
-    background: #E0E0E0;
+    background-color: #F0F0F0;
     border-left: 2px solid #111;
     color: #111;
     margin: 0;
@@ -240,15 +244,4 @@ span.balloon {
     line-height: 16px;
     margin: 0 5px;
     padding: 2px 5px;
-}
-
-/* disqus */
-div#disqus_thread {
-    margin: 30px 0px 0px;
-}
-div#discovery {
-    display: none !important;
-}
-div.dsq-options, div.dsq-sharing-options, div.dsq-dc-logo, div#dsq-global-toolbar, div#dsq-pagination {
-	display: none !important;
 }
