@@ -7,13 +7,13 @@
 title : Maxint Lin
 tagline : On My Way
 author:
-    name : Naiyang Lin (maxint)
-    shortname: maxint
-    # Encoded email address
-    email : '&#108;&#110;&#121;&#099;&#104;&#105;&#110;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;'
-    github : maxint
-    weibo : maxint
-    bitbucket : maxint
+  name : Naiyang Lin (maxint)
+  shortname: maxint
+  # Encoded email address
+  email : '&#108;&#110;&#121;&#099;&#104;&#105;&#110;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;'
+  github : maxint
+  weibo : maxint
+  bitbucket : maxint
 
 production_url : http://maxint.github.io
 theme : default
@@ -23,43 +23,43 @@ theme : default
 # All jekyll-Bootstrap specific configuration
 # ========================================================================
 JB:
-    # All links will be namespaced by BASE_PATH if defined
-    BASE_PATH : false
+  # All links will be namespaced by BASE_PATH if defined
+  BASE_PATH : false
 
-    # By default, the ASSET_PATH is automatically defined relative to BASE_PATH
-    # plus the enabled theme name.
-    # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
-    #
-    # Override this by defining an absolute path to assets here.
-    # ex: 
-    #   http://s3.amazonaws.com/yoursite/themes/watermelon/assets
-    ASSET_PATH : false
+  # By default, the ASSET_PATH is automatically defined relative to BASE_PATH
+  # plus the enabled theme name.
+  # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
+  #
+  # Override this by defining an absolute path to assets here.
+  # ex: 
+  #   http://s3.amazonaws.com/yoursite/themes/watermelon/assets
+  ASSET_PATH : false
 
-    # Comments helper
-    # Set 'provider' to the comment provider you want to use.
-    # Set 'provider' to false to turn commneting off globally.
-    comments :
-        provider : uyan
-        disqus :
-            short_name : mgithub
-        uyan :
-            id : 1948160
+  # Comments helper
+  # Set 'provider' to the comment provider you want to use.
+  # Set 'provider' to false to turn commneting off globally.
+  comments :
+    provider : uyan
+    disqus :
+      short_name : mgithub
+    uyan :
+      id : 1948160
 
-    # Analytics helper
-    analytics :
-        provider : google
-        google :
-            tracking_id : 'UA-XXX-XX'
+  # Analytics helper
+  analytics :
+    provider : google
+    google :
+      tracking_id : 'UA-XXX-XX'
 
-    # Sharing helper
-    # Sharing is for things like tweet, plusone, like, reddit buttons etc.
-    sharing:
-        provider: false
+  # Sharing helper
+  # Sharing is for things like tweet, plusone, like, reddit buttons etc.
+  sharing:
+    provider: false
 
-    # Setting any helper's provider to 'custom' will bypass the helper code
-    # and include your custom code. Your custom file must be defined at:
-    #   ./_includes/custom/[HELPER]
-    # where [HELPER] is the name of the helper you are overriding
+  # Setting any helper's provider to 'custom' will bypass the helper code
+  # and include your custom code. Your custom file must be defined at:
+  #   ./_includes/custom/[HELPER]
+  # where [HELPER] is the name of the helper you are overriding
 
 
 # ========================================================================
@@ -82,7 +82,7 @@ timezone : Aisa/Beijing
 
 safe: false # for debug
 markdown : rdiscount
-pygments : true # for syntax highlight
+highlighter: pygments # The allowed values are 'rouge', 'pygments' or null
 #markdown_ext : markdown,mkd,mkdn,md
 #textile_ext : textile
 
@@ -90,3 +90,22 @@ pygments : true # for syntax highlight
 #port: 4000
 #host: HOSTNAME
 #baseurl: URL
+
+
+# github pages features
+gems:
+  - jekyll-sitemap # generate sitemap automatically
+  - jekyll-redirect-from # enable recirects, usage: --- redirect_from: "/foo" ---
+  - jekyll-mentions # enable @mention
+  - jemoji # enable emoji
+
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+      author: "maxint"
+    
+
+# vim: et ts=2 sts=2 sw=2
