@@ -81,10 +81,12 @@ timezone : Aisa/Beijing
 permalink: /categories/:categories/:year/:month/:day/:title 
 #paginate_path : 'page:num'
 
-markdown : redcarpet # rdiscount
+markdown : redcarpet # kramdown #redcarpet # rdiscount
 highlighter: pygments # The allowed values are 'rouge', 'pygments' or null
 #markdown_ext : markdown,mkd,mkdn,md
 #textile_ext : textile
+kramdown:
+  input: GFM
 
 # Serve settings
 #port: 4000
