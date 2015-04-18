@@ -61,6 +61,7 @@ body {
 }
 #sidebar ul li {
     padding: 0 0 5px 5px;
+    list-style: none;
 }
 #sidebar ul li a {
     color: #444444;
@@ -134,9 +135,9 @@ body {
     margin: 8px 0px;
 }
 
-#post .content ul li { list-style: circle inside none; }
-#post .content ol li { list-style: decimal inside none; }
-#post .content > ol, #post .content > ul { padding-left: 2em; }
+ul li { list-style: circle inside none; }
+ol li { list-style: decimal inside none; }
+ol, ul { padding-left: 2em; }
 #post .content p.eof { margin: 20px 0px; }
 
 /* headers */
