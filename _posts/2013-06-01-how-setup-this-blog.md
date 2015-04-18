@@ -24,18 +24,17 @@ tags: [web]
 
 GitHub Page本身是支持代码高亮的，使用格式如下：
 
-<code><pre>
-{&#37; highlight cpp %}
+<pre><code>{&#37; highlight cpp %}
 printf("Hello wolrd\n");
 {&#37; endhighlight %}
-</pre></code>
+</code></pre>
 
 为了方便本地浏览效果，需要安装Pygments，安装步骤如下：
 
 * 安装[DevKit](http://rubyinstaller.org/downloads/)
 * 安装[Python](http://www.python.org)，推荐Python 2.7
 * 安装Python [setuptools](http://pypi.python.org/pypi/setuptools)
-* 安装Pygments: `$easy_install pygments`
+* 安装Pygments: `$ easy_install pygments`
 
 # Jekyll使用说明
 
