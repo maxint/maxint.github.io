@@ -35,8 +35,7 @@ printf("Hello wolrd\n");
 * 安装[DevKit](http://rubyinstaller.org/downloads/)
 * 安装[Python](http://www.python.org)，推荐Python 2.7
 * 安装Python [setuptools](http://pypi.python.org/pypi/setuptools)
-* 安装Pygments
-> $ easy_install pygments
+* 安装Pygments: `$easy_install pygments`
 
 # Jekyll使用说明
 
