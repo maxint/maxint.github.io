@@ -1,13 +1,13 @@
 <div id="page">
 	<div id="sidebar">
 		<ul>
-			<li><a href="{{ BASE_PATH }}/">ARTICLES</a></li>
-			<li><a href="{{ BASE_PATH }}/tags">TAGS</a></li>
+			<li><a href="/">HOME</a></li>
+			<li><a href="/tags">TAGS</a></li>
 			{% for cat in site.categories %}
-			<li class="category"><a href="{{ BASE_PATH }}/categories/{{ cat[0] }}">{{ cat[0] }}({{ cat | last | size }})</a></li>
+			<li class="category"><a href="/categories/{{ cat[0] }}">{{ cat[0] }}({{ cat | last | size }})</a></li>
 			{% endfor %}
-			<li><a href="{{ BASE_PATH }}/links">LINKS</a></li>
-			<li><a href="{{ BASE_PATH }}/about">ABOUT</a></li>
+			<li><a href="/links">LINKS</a></li>
+			<li><a href="/about">ABOUT</a></li>
 		</ul>
 	</div>
 
