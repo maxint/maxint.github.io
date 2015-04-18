@@ -1,5 +1,5 @@
 /* reset */
-body,div,dl,dt,dd,ul,ol,li,p,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,th,td {
+body, blockquote {
     margin: 0;
     padding: 0;
 }
@@ -19,15 +19,16 @@ body {
     font-family: "Microsoft Yahei",SimHei;
 }
 
-div#wrapper {
+#wrapper {
     border-radius: 5px;
     background-color: #f4f4f4;
     color: #111;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 150%;
     margin: 50px auto;
     padding: 20px;
-    width: 800px;
+    max-width: 800px;
+    min-width: 280px;
 }
 
 #header {
@@ -41,7 +42,7 @@ div#wrapper {
     list-style: none;
 }
 
-div#main.index {
+#main.index {
     overflow: hidden;
 }
 
@@ -50,7 +51,7 @@ div#main.index {
     float: left;
     text-transform: uppercase;
     font-weight: bold;
-    width: 16%;
+    min-width: 16%;
 }
 #sidebar ul {
     letter-spacing: 1px;
@@ -68,13 +69,13 @@ div#main.index {
     color: #999999;
 }
 
+/* page */
 #page {
     overflow: hidden;
 }
-
 #page .content {
     float: right;
-    width: 78%;
+    min-width: 78%;
 }
 
 #tags {
@@ -108,7 +109,6 @@ div#main.index {
 .right { float: right; }
 #related h2 { text-align: left; }
 #related ul { list-style: circle inside none; }
-#page-navigation { font-size: 13px; }
 
 /* content */
 .content hr {
@@ -121,14 +121,12 @@ div#main.index {
 }
 .content ul li { list-style: circle inside none; }
 .content ol li { list-style: decimal inside none; }
-.content .posts li { list-style: none; }
-.content p, .content ul, .content ol {
-    margin: 16px 0px;
-}
+.content > ol, .content > ul { padding-left: 2em; }
+/*.content p, .content ul, .content ol { margin: 16px 0px; }*/
 .content p.eof { margin: 30px 0px; }
-.content ol, .content ul {
-    padding-left: 2em;
-}
+
+#posts { padding-left: 0em; }
+#posts li { list-style: none; }
 
 /* headers */
 #page .content h1 {
@@ -176,7 +174,7 @@ a img {
 p.date {
     color: #999;
     float: right;
-    font-size: 14px;
+    font-size: 12px;
     margin: 0;
 }
 
@@ -189,10 +187,10 @@ p.date {
     text-align: center;
 }
 
-.small,p.date,p#footnote,p#footnote a,del,del a {
+.small, p.date, p#footnote, p#footnote a, del, del a {
     color: #888;
 }
-.small,p#footnote {
+.small, p#footnote {
     font-size: 12px;
 }
 
@@ -205,9 +203,10 @@ em {
 /* blocks */
 pre {
     background-color: #E6E6E6;
-    padding: 12px;
+    padding: 0.8em;
+    margin: 0px;
     margin-bottom: 6px;
-    font-size: 85%;
+    font-size: 95%;
     line-height: 1.45;
 }
 
@@ -250,4 +249,13 @@ span.balloon {
     line-height: 16px;
     margin: 0 5px;
     padding: 2px 5px;
+}
+
+@media (max-width: 640px) {
+    div#wrapper {
+        margin: 0px auto;
+    }
+    #sidebar, #page .content {
+        float: none;
+    }
 }
