@@ -27,8 +27,8 @@ public:
 
 # Automatic Escaping for Special Characters
 
-*   http://images.google.com/images?num=30&q=larry+bird
-*   4 < 5
+* http://images.google.com/images?num=30&q=larry+bird
+* 4 < 5
 
 Header 1
 ========
@@ -51,9 +51,11 @@ It's a paragraph.
 
 Here is an example of AppleScript:
 
-    tell application "Foo"
-        beep
-    end tell
+```
+tell application "Foo"
+    beep
+end tell
+```
 
 
 # Horizontal Rules
@@ -73,20 +75,38 @@ Here is an example of AppleScript:
 > This is the first level of quating
 > > This is nested blockquote
 >
-> 1.    order list
-> 1.    second
+> 1. order list
+> 1. second
+>   - unorderd list
+>   - second
+>   - third
 
 # LIST
 
-*   unorderd list
-*   second
-*   third
+* unorderd list
+* second
+    1. ordered list
+    1. second
+    1. third
+* third
+    - unorderd list
+    - second
+    - third
 
 Order list
 
-1.  ordered list
-1.  second
-1.  third
+1. ordered list
+    - unorderd list
+    - second
+    - third
+1. second
+    - unorderd list
+    - second
+    - third
+1. third
+    1. ordered list
+    1. second
+    1. third
 
 # Link
 
