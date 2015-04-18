@@ -25,7 +25,7 @@ body {
     color: #111;
     font-size: 12px;
     line-height: 150%;
-    margin: 50px auto;
+    margin: 40px auto;
     padding: 20px;
     max-width: 800px;
     min-width: 280px;
@@ -119,14 +119,25 @@ body {
 .content img, .content object {
     border-radius: 5px;
 }
-.content ul li { list-style: circle inside none; }
-.content ol li { list-style: decimal inside none; }
-.content > ol, .content > ul { padding-left: 2em; }
-/*.content p, .content ul, .content ol { margin: 16px 0px; }*/
-.content p.eof { margin: 30px 0px; }
+.content h1 {
+    background: none repeat scroll 0px 0px rgb(221, 221, 221);
+    font-size: 16px;
+    margin: 16px -20px;
+    padding: 10px 20px;
+}
+.content h2 {
+    font-size: 15px;
+    margin: 12px 0px;
+}
+.content h3 {
+    font-size: 13px;
+    margin: 8px 0px;
+}
 
-#posts { padding-left: 0em; }
-#posts li { list-style: none; }
+#post .content ul li { list-style: circle inside none; }
+#post .content ol li { list-style: decimal inside none; }
+#post .content > ol, #post .content > ul { padding-left: 2em; }
+#post .content p.eof { margin: 20px 0px; }
 
 /* headers */
 #page .content h1 {
@@ -142,14 +153,10 @@ body {
 #page h3.title {
     text-transform: uppercase;
 }
-.content h1 {
-    background: none repeat scroll 0px 0px rgb(221, 221, 221);
-    font-size: 16px;
-    margin: 16px -20px;
-    padding: 10px 20px;
-}
-.content h2 { font-size: 15px; margin: 12px 0px; }
-.content h3 { font-size: 13px; margin: 8px 0px; }
+
+.posts { padding-left: 0em; }
+.posts li { list-style: none; }
+
 
 /* linker */
 h1 a:hover {
