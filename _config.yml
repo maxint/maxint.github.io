@@ -78,7 +78,7 @@ timezone : Aisa/Beijing
 # This is the default format. 
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 #permalink : date
-permalink: /categories/:categories/:year/:month/:day/:title 
+permalink: /:year/:month/:day/:title 
 #paginate_path : 'page:num'
 
 markdown : redcarpet # kramdown #redcarpet # rdiscount
