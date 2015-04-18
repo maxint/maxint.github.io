@@ -11,11 +11,11 @@
 		<div class="left">
             {% if page.categories %}
                 Category:
-                <span class="cat"><a href="{{ BASE_PATH }}/categories/{{ page.category }}.html">{{ page.category }}</span></a>.
+                <span class="cat"><a href="{{ BASE_PATH }}/categories/{{ page.category }}">{{ page.category }}</span></a>.
             {% endif %}
             {% if page.tags %}
                 Tags:
-				{% for tag in page.tags %}<span class="tag"><a href="{{ BASE_PATH }}/tags.html#{{ tag }}-ref">{{ tag }}</a></span>{% if forloop.last %}.{% else %}, {% endif %}{% endfor %}
+				{% for tag in page.tags %}<span class="tag"><a href="{{ BASE_PATH }}/tags#{{ tag }}-ref">{{ tag }}</a></span>{% if forloop.last %}.{% else %}, {% endif %}{% endfor %}
 			{% endif %}
 		</div>
 		<div class="clear">&nbsp;</div>
