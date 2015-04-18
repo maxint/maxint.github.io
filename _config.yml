@@ -78,7 +78,7 @@ timezone : Aisa/Beijing
 #paginate_path : 'page:num'
 
 safe: false # for debug
-markdown : rdiscount
+markdown : redcarpet # rdiscount
 highlighter: pygments # The allowed values are 'rouge', 'pygments' or null
 #markdown_ext : markdown,mkd,mkdn,md
 #textile_ext : textile
