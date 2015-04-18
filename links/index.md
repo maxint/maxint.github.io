@@ -5,7 +5,7 @@ title: LINKS
 
 ## This Blog
 
-* [Categories](/categories.html)
+* [Categories](/categories)
 * [RSS](/atom.xml)
 
 ## Tools
