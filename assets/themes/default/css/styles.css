@@ -139,7 +139,9 @@ body {
     font-size: 13px;
     margin: 8px 0px;
 }
+.content p { margin: 1em 0px; }
 .content p.eof { margin: 20px 0px; }
+.content ul, .content ol { margin: 1em 0px; }
 
 ul li { list-style: circle inside none; }
 ol li { list-style: decimal inside none; }
