@@ -44,9 +44,11 @@ JB:
 
   # Analytics helper
   analytics :
-    provider : google
+    provider : cnzz
     google :
       tracking_id : 'UA-XXX-XX'
+    cnzz :
+      tracking_id : '1254823254'
 
   # Sharing helper
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.

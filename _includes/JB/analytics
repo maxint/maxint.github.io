@@ -7,6 +7,8 @@
   {% include JB/analytics-providers/getclicky %}
 {% when "mixpanel" %}
   {% include JB/analytics-providers/mixpanel %}
+{% when "cnzz" %}
+  {% include JB/analytics-providers/cnzz %}
 {% when "custom" %}
   {% include custom/analytics %}
 {% endcase %}
