@@ -1,5 +1,5 @@
 ---
-title: "error C2236: unexpected &amp;#39;class&amp;#39;"
+title: "Compile error: unexpected class"
 category: life
 ---
 
