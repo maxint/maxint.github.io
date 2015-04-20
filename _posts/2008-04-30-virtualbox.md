@@ -1,6 +1,7 @@
 ---
 title: "关于VirtualBox虚拟机的网络配置"
-category: life
+category: software
+tags: [linux, virtualbox]
 ---
 
 VB而不用VM（vmware）呢？VM的网络配置不是比VB的简单得多吗？其实没什么在原因，只是最近对开源的东西热情高涨，且VB的体积比VM小得多，安装文件VB：17M，而VM6：130M+，我得承认我是洁癖男（嘿嘿~所以才喜欢Arch）。好，现在进入正题。
