@@ -231,7 +231,7 @@ pre {
 code, tt {
     font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
     background-color: #E6E6E6;
-    padding: 0em 0.2em;
+    padding: 0.2em 0.5em;
     border-radius: 3px;
 }
 
