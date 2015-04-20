@@ -141,9 +141,9 @@ body {
     font-size: 13px;
     margin: 8px 0px;
 }
-.content p { margin: 1em 0px; }
+.content p { margin-top: 1em; }
 .content p.eof { margin: 20px 0px; }
-.content ul, .content ol { margin: 1em 0px; }
+.content ul, .content ol { margin: 0.25em 0; }
 
 ul li { list-style: circle inside none; }
 ol li { list-style: decimal inside none; }
@@ -189,6 +189,7 @@ a img {
 }
 
 /* meta class */
+.meta { margin-bottom: 1em; }
 p.date {
     color: #999;
     float: right;
@@ -222,8 +223,7 @@ em {
 pre {
     background-color: #E6E6E6;
     padding: 0.8em;
-    margin: 0px;
-    margin-bottom: 6px;
+    margin: 0.5em 0;
     font-size: 95%;
     line-height: 1.45;
     border-radius: 3px;
@@ -247,6 +247,7 @@ blockquote {
     border-left: 2px solid #111;
     color: #111;
     padding-left: 1em;
+    margin: 0.5em 0;
 }
 
 .notice {
@@ -272,7 +273,7 @@ span.balloon {
     display: inline-block;
     font-size: 10px;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 125%;
     margin: 0 5px;
     padding: 2px 5px;
 }
