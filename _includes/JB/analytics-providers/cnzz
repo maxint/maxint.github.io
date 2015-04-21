@@ -1,4 +1,5 @@
 <script type="text/javascript">
     var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-    document.write(unescape("%3Cspan id='cnzz_stat_icon_{{ site.JB.analytics.cnzz.tracking_id }}'%3E站长统计%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D{{ site.JB.analytics.cnzz.tracking_id }}' type='text/javascript'%3E%3C/script%3E"));
+    var inner_link = "%3Ca href='http://www.cnzz.com/stat/website.php?web_id={{ site.JB.analytics.cnzz.tracking_id }}' target='_blank' title='站长统计'%3E站长统计%3C/a%3E";
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_{{ site.JB.analytics.cnzz.tracking_id }}'%3E" + inner_link + "%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D{{ site.JB.analytics.cnzz.tracking_id }}' type='text/javascript'%3E%3C/script%3E"));
 </script>
