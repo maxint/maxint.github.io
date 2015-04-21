@@ -165,7 +165,10 @@ div ol, div ul { padding-left: 1em; }
     text-transform: uppercase;
 }
 
-.posts { padding-left: 0em; }
+.posts {
+    padding-left: 0em;
+    line-height: 175%;
+}
 .posts li { list-style: none; }
 
 
@@ -182,6 +185,10 @@ a {
 a:hover {
     color: #33f;
     text-decoration: underline;
+}
+
+a:visited {
+    color: #333;
 }
 
 a img {
