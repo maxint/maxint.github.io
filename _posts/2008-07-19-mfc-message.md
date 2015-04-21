@@ -7,7 +7,7 @@ tags: [mfc]
 ON_MESSAGE 响应的是自定义消息,有关自定义消息的处理请看如下步骤:
 
 
-## 定义消息
+# 定义消息
 
 在CCDlg类的头文件中加入如下代码：
 
@@ -21,7 +21,7 @@ ON_MESSAGE 响应的是自定义消息,有关自定义消息的处理请看如�
 afx_msg LRESULT Customize(WPARAM wParam, LPARAM lParam);
 ```
 
-## cpp文件中加入消息的注
+# cpp文件中加入消息的注
 
 ```cpp
 ON_MESSAGE(WM_CUSTOMIZE, Customize)
@@ -29,7 +29,7 @@ ON_MESSAGE(WM_CUSTOMIZE, Customize)
 
 
 
-## 加入消息响应函数实现
+# 加入消息响应函数实现
 
 在CCDlg类的实现文件中加入消息响应函数的实现部分，代码如下：
 
@@ -42,7 +42,7 @@ void CCDlg::Customize(WPARAM wParam, LPARAM lParam)
 }
 ```
 
-## 显式地发送消息
+# 显式地发送消息
 
 在主框架的 帮助 主菜单中加入 自定义消息 子菜单，其ID设为ID_CUSTOMIZE，通过类向导响应该命令，函数名默认。其函数体如下：
 
