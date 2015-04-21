@@ -16,11 +16,37 @@ tags: [web]
 
 # 本地调试环境
 
+## 安装Ruby
+
+### Windows:
+
 * 安装[Ruby](http://rubyinstaller.org/downloads/)，推荐Ruby v1.9，v2.0使用时有错误
 * 通过[RubyGems](http://docs.rubygems.org/read/chapter/3)安装Jekyll
-> $ gem install jekyll
 
-# 本地代码高亮支持（可选）
+### Linux
+
+```bash
+curl -L get.rvm.io | bash -s stable # 安装 Ruby Version Manager (rvm)
+rvm install 2.1
+```
+
+为加快安装速度可选用 [淘宝网 RubyGems 镜像](http://ruby.taobao.org/)
+
+```bash
+sed -i .bak 's!cache.ruby-lang.org/pub/ruby!ruby.taobao.org/mirrors/ruby!' $rvm_path/config/db
+gem sources --remove https://rubygems.org/
+gem sources -a https://ruby.taobao.org/
+gem sources -l
+```
+
+## 安装依赖的 RubyGems
+
+```bash
+gem install github-pages # github page enviroment
+gem install therubyracer # V8 javascript engine
+```
+
+# 本地代码高亮
 
 GitHub Page本身是支持代码高亮的，使用格式如下：
 
@@ -29,12 +55,12 @@ printf("Hello wolrd\n");
 {&#37; endhighlight %}
 </code></pre>
 
-为了方便本地浏览效果，需要安装Pygments，安装步骤如下：
+或 (需在`_config.yaml`里设置`markdown : redcarpet`)
 
-* 安装[DevKit](http://rubyinstaller.org/downloads/)
-* 安装[Python](http://www.python.org)，推荐Python 2.7
-* 安装Python [setuptools](http://pypi.python.org/pypi/setuptools)
-* 安装Pygments: `$ easy_install pygments`
+<pre><code>&#96;&#96;&#96;cpp
+printf("Hello wolrd\n");
+&#96;&#96;&#96;
+</code></pre>
 
 # Jekyll使用说明
 
@@ -59,7 +85,7 @@ GitHub Page当然是由代码管理工具[Git](http://git-scm.com/)来维护，�
 * [GitHub Page Doc] [3]
 * [本博客代码] [4]
 
-[1]: http://greeensy.github.io/github-jekyll/   "用GitHub Pages搭建博客和Jekyll环境搭建"
-[2]: http://jekyllrb.com/docs/home/             "Jekyllrb Doc"
+[1]: http://greeensy.github.io/github-jekyll/       "用GitHub Pages搭建博客和Jekyll环境搭建"
+[2]: http://jekyllrb.com/docs/home/                 "Jekyllrb Doc"
 [3]: https://help.github.com/categories/20/articles "GitHub Page Doc"
-[4]: https://github.com/maxint/maxint.github.io "本博客代码"
+[4]: https://github.com/maxint/maxint.github.io     "本博客代码"
