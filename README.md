@@ -1,4 +1,4 @@
 maxint.github.io
 ================
 
-Github page
+Github page: [maxint.github.io](http://maxint.github.io)
