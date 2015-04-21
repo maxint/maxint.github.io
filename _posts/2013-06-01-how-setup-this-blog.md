@@ -55,7 +55,7 @@ printf("Hello wolrd\n");
 {&#37; endhighlight %}
 </code></pre>
 
-或 (需在`_config.yaml`里设置`markdown : redcarpet`)
+如果使用 [redcarpet](https://github.com/vmg/redcarpet) Markdown parser， 在`_config.yaml`里设置`markdown : redcarpet`，还可以支持如下格式：
 
 <pre><code>&#96;&#96;&#96;cpp
 printf("Hello wolrd\n");
