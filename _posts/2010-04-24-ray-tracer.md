@@ -6,9 +6,9 @@ tags: [cg]
 
 就做到这吧，不想再花时间了。
 
-![](http://hiphotos.baidu.com/maxint/pic/item/e1d7cff5e9be451dbd31091c.jpg)
-![](http://hiphotos.baidu.com/maxint/pic/item/20134964362a75b5f63654cd.jpg)
-![](http://hiphotos.baidu.com/maxint/pic/item/2dda8960855c8a01eaf8f8d0.jpg)
+![](https://cloud.githubusercontent.com/assets/85147/7808697/ad1f61de-03c7-11e5-8c93-60e8299e8151.jpg)
+![](https://cloud.githubusercontent.com/assets/85147/7808696/acfd64da-03c7-11e5-92dc-55ab5e9f81fb.jpg)
+![](https://cloud.githubusercontent.com/assets/85147/7808698/ad42e41a-03c7-11e5-9c87-850119b2c9a5.jpg)
 
 原代码：[github.com/maxint/raytracer-cpu](https://github.com/maxint/raytracer-cpu)
 
