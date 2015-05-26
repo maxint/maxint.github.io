@@ -15,4 +15,4 @@ tags: [python]
 
 在wxPython 2.8下用uliPad时，提示找不到 comtypes module，好像是因为python 2.6中又不包含这个模块了，直接下一个好了。整个安装配置过程很流畅，只要下包，双击exe就好了。还是就是python的标准代码风格也太严格了，连多加几个空格或少了一个空行，都直接Warning :grin:。快速入门图：
 
-![](http://hiphotos.baidu.com/maxint/pic/item/3006f84c4a31a6ced62afc11.jpg) 
+![python cheatsheet](https://cloud.githubusercontent.com/assets/85147/7808642/5118e45a-03c7-11e5-93a1-7ca32c768fbe.png)
