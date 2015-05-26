@@ -1,6 +1,6 @@
 ---
 title: "一个无奈的 BUG"
-category: life
+category: cg
 tags: [cg]
 ---
 
