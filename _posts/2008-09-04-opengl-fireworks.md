@@ -6,11 +6,10 @@ tags: [cg, opengl]
 
 参考这个做的： [http://blog.csdn.net/crazyjumper/archive/2007/10/19/1833483.aspx](http://blog.csdn.net/crazyjumper/archive/2007/10/19/1833483.aspx) 
 
-![](http://hiphotos.baidu.com/maxint/pic/item/5c6a46c298fde8020ff47798.jpg)
+![](https://cloud.githubusercontent.com/assets/85147/7809097/659e0c40-03ca-11e5-8833-0c1132441406.png)
+![](https://cloud.githubusercontent.com/assets/85147/7809096/65289d70-03ca-11e5-8864-850824167eab.png)
+![](https://cloud.githubusercontent.com/assets/85147/7809130/ab15d8f2-03ca-11e5-9739-29d43f200d4b.png)
 
-![](http://hiphotos.baidu.com/maxint/pic/item/78329ed900f43bf038012f99.jpg)
-
-![](http://hiphotos.baidu.com/maxint/pic/item/743d9b3107b08900eac4af9a.jpg)
 
 只贴下数据结构
 
