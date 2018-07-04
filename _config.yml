@@ -49,6 +49,41 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+
+# following items are unable to configure in github
+source : .
+safe: false # for debug
+lsi: false
+
+# Global configuration
+destination: ./_site
+plugins_dir: ./_plugins
+layouts_dir: ./_layouts
+# timezone: Aisa/Beijing
+
+#relative_permalinks : true
+#permalink : date
+permalink: /blog/:year/:month/:day/:title 
+#paginate_path : 'page:num'
+
+# github pages features
+# plugins:
+#   - jekyll-sitemap # generate sitemap automatically
+#   - jekyll-redirect-from # enable recirects, usage: --- redirect_from: "/foo" ---
+#   - jekyll-mentions # enable @mention
+#   - jemoji # enable emoji
+
+github:
+  username: maxint/maxint.github.io
+
+defaults:
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+      author: "maxint"
+
 # ========================================================================
 # All jekyll-Bootstrap specific configuration
 # ========================================================================
