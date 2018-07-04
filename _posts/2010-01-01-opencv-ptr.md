@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "OpenCV 源码中的安全指针和指针对齐"
 category: coding
 tags: [opencv, image]

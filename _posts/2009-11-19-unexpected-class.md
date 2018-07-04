@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Compile error: unexpected class"
 category: coding
 tags: [cpp]

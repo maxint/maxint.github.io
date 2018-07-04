@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "OpenGL上的烟花"
 category: cg
 tags: [cg, opengl]

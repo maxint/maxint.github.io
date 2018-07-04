@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "被LC点名"
 category: life
 tag: [life, renren.com]

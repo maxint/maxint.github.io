@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "第一篇日志"
 description: ""
 category: coding

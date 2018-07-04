@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "终于写好Z Buffer作业了"
 category: cg
 tags: [cg]

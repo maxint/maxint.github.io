@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "用livecd-ftp手工打造arch手记"
 category: linux
 tags: [linux]

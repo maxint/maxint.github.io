@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Python 快速入门"
 category: coding
 tags: [python]
