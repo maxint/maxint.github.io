@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "CMake 教程（基础篇）"
-description: ""
 category: coding
 tags: [c++, tool]
 ---

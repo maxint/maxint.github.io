@@ -4,7 +4,7 @@ title: About
 premalink: /about/
 ---
 
-我的网络足迹
+<p>我的网络足迹</p>
 
 <ul>
 	<li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;{{ site.email }}">{{ site.email }}</a></li>
