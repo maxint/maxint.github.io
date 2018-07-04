@@ -6,6 +6,8 @@ tags: [cg]
 
 最近一直在忙毕设，做的是一个增强实现相关的课题。也有好久没写日志了，主要是因为把思绪整理成文字是一件比较费时的事，且自己掌握的知识有限，当心误导群众，所以平时的些许感想或牢骚都直接发在 [微博](http://t.sina.com/maxint) 上了。寒假回家，又得重新修理家里的老机子，因一个SATA接口出问题，使我误以为硬盘出现坏道，删除格式化整块硬盘好几次。后来另了一个SATA接口，问题解决了，但整块硬盘的数据没了，我的游戏和电影呀 :sob:。死马当成活马医，最后终于用硬盘恢复软件 "Recover My Files“ 恢复了大部分数据 :blush:，很是强大！于是，开学刚后来就开始整理硬盘操作心得，写了一半，后来因时间不多就忙别的事了，目前还一直是草稿状态。。
 
+<!--more-->
+
 再接着说说毕设的事。不得不嘘下自己的一个恶习，什么事都想整得完美些，把很多时间浪费在次要的细节上了，这次选编程平台就是一个例子。因为整个项目算是属于可视化的，用 OGRE 做可视化的好像比较少。学术业用 OpenGL 的比较多，但资源和绘制状态管理起来又比较麻烦了。直接用 OpenGL、D3D API 与用 OGRE、OSG 等基于场景树管理的绘制引擎的一个重要区别是它们的绘制模式不同，前者使用的是 立即模式（[Immidiate Mode](http://en.wikipedia.org/wiki/Immediate_mode)），后者使用的是保留模式 （[Retained Mode](http://en.wikipedia.org/wiki/Retained_mode)）。简单的说，前者需要用户（程序员）控制绘制的每一个细节，调用 API 立即得到绘制结果，如调用 glCallList() 后，就<strong>立即</strong>把绘制结果写到 color buffer、depth buffer 或 stecile buffer 中的。而后者只需要给引擎一些高级的命令，如物体放哪里，什么材质的，然后引擎控制绘制细节，优化绘制顺序（如尽可能减少绘制状态切换），调用相关的低层 API，用户<strong>不能立即</strong>得到绘制结果。就好像你先把命令录制在磁带上，之后引擎不断回放这磁带。大多数新手都是看 OpenGL 红宝书过来的，习惯了立即模式，当要实现一个在保留模式中不直观的操作时就郁闷了，如 stencil buffer、depth buffer 和 clip plane 相关的操作。遇到问题第一时间 google，翻 WIKI 或 BBS 就对了，如果还没有解决就只好看源代码。花了一些时间去尝试几个绘制引擎库，有 [G3D](http://g3d.sourceforge.net/)、[Visualization Library](http://www.visualizationlibrary.com/)、[OSG](http://www.openscenegraph.org/)、[Coin3D](http://www.coin3d.org/)、[OGRE](http://www.ogre3d.org/)，留下的印象是：
 
 - `G3D`：见过实验室的几个项目是用这做的。称各模块（如纹理、材质类）可以独立使用；几乎没什么场景树管理，支持传统的立即模式；附带光线跟踪引擎，例程比较酷；自带GUI。

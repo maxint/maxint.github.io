@@ -7,6 +7,8 @@ tags: [web]
 
 [本博客][4]托管在[GitHub Page](http://page.github.com)上，后台由[Jekyll](http://jekyllrb.com/docs/installation/)生成静态网页。先简单介绍下Jekyll，它由ruby编写的，结合了markdown、Liquid等技术，简化了静态网站的构建过程，配合[disqus](http://www.disqus.com)等在线留言板服务，可以方便的生成具有简单动态功能的网站。
 
+<!--more-->
+
 # 在GitHub Page上建立博客
 
 * 注册GitHub账号
@@ -15,34 +17,17 @@ tags: [web]
 
 # 本地调试环境
 
-## 安装Ruby
-
-### Windows:
+## 安装Ruby (Windows)
 
 * 安装[Ruby](http://rubyinstaller.org/downloads/)，推荐Ruby v1.9，v2.0使用时有错误
 * 通过[RubyGems](http://docs.rubygems.org/read/chapter/3)安装Jekyll
-
-### Linux
-
-```bash
-curl -L get.rvm.io | bash -s stable # 安装 Ruby Version Manager (rvm)
-rvm install 2.1
-```
-
-为加快安装速度可选用 [淘宝网 RubyGems 镜像](http://ruby.taobao.org/)
-
-```bash
-sed -i .bak 's!cache.ruby-lang.org/pub/ruby!ruby.taobao.org/mirrors/ruby!' $rvm_path/config/db
-gem sources --remove https://rubygems.org/
-gem sources -a https://ruby.taobao.org/
-gem sources -l
-```
 
 ## 安装依赖的 RubyGems
 
 ```bash
 gem install github-pages # github page enviroment
 gem install therubyracer # V8 javascript engine
+gem install bundler
 ```
 
 # 本地代码高亮
@@ -65,11 +50,11 @@ printf("Hello wolrd\n");
 
 ### 生成网站
 
-    $ jekyll build [--watch]
+    $ bundle exec jekyll build [--watch]
 
 ### 启动网站后台
 
-    $ jekyll serve [--watch]
+    $ bundle exec jekyll serve [--watch]
 
 这样可以一边修改一边在浏览器中实时刷新查看修改结果，很是方便。
 

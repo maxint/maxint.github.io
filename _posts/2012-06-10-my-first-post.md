@@ -7,6 +7,8 @@ tags: [jekyll]
 
 This is a test post.
 
+<!--more-->
+
 ``` cpp
 class Test
 {
