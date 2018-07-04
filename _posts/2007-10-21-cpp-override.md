@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "VC 操作符重载"
 category: coding
 tags: [cpp, renren.com]

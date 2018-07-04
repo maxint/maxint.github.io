@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "ON_MESSAGE使用方法"
 category: coding
 tags: [mfc]

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "万恶的光线跟踪"
 category: cg
 tags: [cg]

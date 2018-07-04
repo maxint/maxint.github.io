@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "生日晚饭"
 category: life
 tags: [life, school, renren.com]

@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "又逢高考"
 category: life
 tags: [life, school, renren.com]

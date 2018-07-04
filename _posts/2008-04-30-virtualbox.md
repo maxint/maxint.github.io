@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "关于VirtualBox虚拟机的网络配置"
 category: software
 tags: [linux, virtualbox]

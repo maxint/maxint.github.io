@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Linux下的DHCP服务配置"
 category: linux
 tags: [linux]

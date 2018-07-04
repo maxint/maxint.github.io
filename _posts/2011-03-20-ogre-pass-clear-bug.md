@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "一个无奈的 BUG"
 category: cg
 tags: [cg]

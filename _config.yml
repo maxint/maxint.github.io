@@ -1,27 +1,60 @@
-# ========================================================================
-# Blog personal settings
-# ========================================================================
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Themes are encouraged to use these universal variables 
-# so be sure to set them if your theme uses them. 
+# ========================================================================
+# Site settings
+# ========================================================================
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 title: Maxint Lin
-tagline: On My Way
-
+email: '&#108;&#110;&#121;&#099;&#104;&#105;&#110;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;'
+description: >- # this means to ignore newlines until "baseurl:"
+  Happy Coding
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://maxint.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 username: maxint
 full_name: Naiyang Lin
-author: Naiyan Lin (maxint)
-email: '&#108;&#110;&#121;&#099;&#104;&#105;&#110;&#097;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;'
+github_username: maxint
+theme: minima
+# theme: jekyll-theme-awesome
 
-production_url : http://maxint.github.io
-theme : default
+# ========================================================================
+# Jekyell system settings
+# ========================================================================
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+plugins:
+  - jekyll-feed
 
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
 
 # ========================================================================
 # All jekyll-Bootstrap specific configuration
 # ========================================================================
 JB:
   # All links will be namespaced by BASE_PATH if defined
-  BASE_PATH : false
+  BASE_PATH: false
 
   # By default, the ASSET_PATH is automatically defined relative to BASE_PATH
   # plus the enabled theme name.
@@ -30,25 +63,19 @@ JB:
   # Override this by defining an absolute path to assets here.
   # ex: 
   #   http://s3.amazonaws.com/yoursite/themes/watermelon/assets
-  ASSET_PATH : false
+  ASSET_PATH: false
 
   # Comments helper
-  # Set 'provider' to the comment provider you want to use.
-  # Set 'provider' to false to turn commneting off globally.
-  comments :
-    provider : uyan
-    disqus :
-      short_name : mgithub
-    uyan :
-      id : 1948160
+  comments:
+    provider: uyan # false
+    uyan:
+      id: 1948160
 
   # Analytics helper
-  analytics :
-    provider : cnzz
-    google :
-      tracking_id : 'UA-XXX-XX'
-    cnzz :
-      tracking_id : '1254823254'
+  analytics:
+    provider: cnzz # false
+    cnzz:
+      tracking_id: '1254823254'
 
   # Sharing helper
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.
@@ -59,58 +86,3 @@ JB:
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding
-
-
-# ========================================================================
-# Jekyell system settings
-# ========================================================================
-
-# following items are unable to configure in github
-source : .
-safe: false # for debug
-lsi: false
-
-# Global configuration
-destination : ./_site
-plugins : ./_plugins
-layouts : ./_layouts
-timezone : Aisa/Beijing
-
-#relative_permalinks : true
-#permalink : date
-permalink: /blog/:year/:month/:day/:title 
-#paginate_path : 'page:num'
-
-markdown : redcarpet # kramdown #redcarpet # rdiscount
-highlighter: pygments # The allowed values are 'rouge', 'pygments' or null
-#markdown_ext : markdown,mkd,mkdn,md
-#textile_ext : textile
-kramdown:
-  input: GFM
-
-# Serve settings
-#port: 4000
-#host: HOSTNAME
-#baseurl: URL
-
-
-# github pages features
-gems:
-  - jekyll-sitemap # generate sitemap automatically
-  - jekyll-redirect-from # enable recirects, usage: --- redirect_from: "/foo" ---
-  - jekyll-mentions # enable @mention
-  - jemoji # enable emoji
-
-github:
-  username: maxint/maxint.github.io
-
-defaults:
-  -
-    scope:
-      type: "posts"
-    values:
-      layout: "post"
-      author: "maxint"
-    
-
-# vim: et ts=2 sts=2 sw=2

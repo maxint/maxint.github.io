@@ -1,9 +1,11 @@
 ---
 layout: page
-title: ABOUT
+title: About
+premalink: /about/
 ---
 
-<p>我的网络足迹：</p>
+我的网络足迹
+
 <ul>
 	<li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;{{ site.email }}">{{ site.email }}</a></li>
 	<li><a href="http://github.com/{{ site.username }}/">github.com/{{ site.username }}</a></li>

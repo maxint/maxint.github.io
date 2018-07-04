@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "世界编程大赛一等奖作品"
 category: coding
 tags: [cool, renren.com]
