@@ -1,6 +1,5 @@
 ---
 title: "怎么搭建一个这样的博客"
-description: ""
 category: life
 tags: [web]
 ---
@@ -24,39 +23,24 @@ tags: [web]
 
 ## 安装依赖的 RubyGems
 
-```bash
-gem install github-pages # github page enviroment
-gem install therubyracer # V8 javascript engine
-gem install bundler
+```shell
+gem install jekyll # static websites generator
+gem install bundler # helps you track and install the gems
 ```
 
-# 本地代码高亮
+## 创建博客模板
 
-GitHub Page本身是支持代码高亮的，使用格式如下：
+```shell
+jekyll new my-awesome-site
+cd my-awesome-site
+bundle exec jekyll serve
+```
 
-<pre><code>{&#37; highlight cpp %}
-printf("Hello wolrd\n");
-{&#37; endhighlight %}
-</code></pre>
+如果想一边修改一边在浏览器中实时刷新查看修改结果
 
-如果使用 [redcarpet](https://github.com/vmg/redcarpet) Markdown parser， 在`_config.yaml`里设置`markdown : redcarpet`，还可以支持如下格式：
-
-<pre><code>&#96;&#96;&#96;cpp
-printf("Hello wolrd\n");
-&#96;&#96;&#96;
-</code></pre>
-
-# Jekyll使用说明
-
-### 生成网站
-
-    $ bundle exec jekyll build [--watch]
-
-### 启动网站后台
-
-    $ bundle exec jekyll serve [--watch]
-
-这样可以一边修改一边在浏览器中实时刷新查看修改结果，很是方便。
+```shell
+bundle exec jekyll serve --watch
+```
 
 # 代码和管理
 
